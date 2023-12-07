@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose= require("mongoose");
-const CONNECTION_URL='mongodb+srv://vamsi:vamsi1234@cluster0.pkib0qn.mongodb.net/?retryWrites=true&w=majority'
+const CONNECTION_URL='mongodb+srv://satwik:satwik1234@cluster0.pkib0qn.mongodb.net/?retryWrites=true&w=majority'
 const PORT = process.env.PORT|| 5000;
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`)))
